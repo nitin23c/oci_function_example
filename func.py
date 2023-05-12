@@ -47,10 +47,11 @@ def delete_local_files(local_path, object_name):
 def upload_objects(signer, namespace, remote_host, remote_path, object_names, remote_user, local_path):
     secret_ocid = os.environ.get("SECRET_OCID")
     try:
+        # Fetch private stored in oracle vault secret
         get_secret = oci.secrets.SecretsClient({}, signer=signer)
         secret_content = get_secret.get_secret_bundle(secret_ocid).data.secret_bundle_content.content.encode('ascii')
         decrypted_secret_content = base64.b64decode(secret_content).decode("ascii")
-        print("decrypted secret content is:", decrypted_secret_content)
+        # Save the private key
         with open('/tmp/remote_server.key', 'w') as file:
             file.write(decrypted_secret_content)
     except Exception as ex:
