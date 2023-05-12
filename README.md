@@ -1,7 +1,7 @@
 
 # Download and Transfer
 
-OCI Function that pulls objects from a bucket and pushes them to a remote host and the deletes the object from the bucket.
+This OCI Function that pulls objects from a bucket and pushes them to a remote host and the deletes the object from the bucket.
 
 This function uses Resource Principals to securely authorize a function to make API calls to OCI services using the OCI Python SDK.
 
