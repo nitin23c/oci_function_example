@@ -104,7 +104,9 @@ fn --verbose deploy --app download_and_transfer
 
 ### Update configuration
 
-Update the SECRET_OCID configuration of function with the ocid of secret created earlier.## Demo
+Update the SECRET_OCID configuration of function with the ocid of secret created earlier.
+
+![Create Secret](https://github.com/nitin23c/oci_function_example/assets/11648754/185af46f-84be-46d2-825d-233c633c4869)
 
 To test the build , Enable emit events of a bucket.
 
