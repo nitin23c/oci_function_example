@@ -1,5 +1,5 @@
 schema_version: 20180708
-name: dntv4
+name: download_and_transfer
 version: 0.1.58
 runtime: python
 build_image: fnproject/python:3.9-dev
