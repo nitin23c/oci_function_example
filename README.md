@@ -114,4 +114,4 @@ To test the build , Enable emit events of a bucket.
 
 ![Event Action](https://github.com/nitin23c/oci_function_example/assets/11648754/1fe65d94-1601-4e48-87ed-28172650b059)
 
-At this point you can upload the objects to the bucket which should invoke the function and the function should pull the objects from the bucket transfers it to remote host and delete the object from the bucket.
+At this point you can upload the objects to the bucket which should invoke the function and the function should pull the objects from the bucket transfers it to remote host and deletes the object from the bucket.
