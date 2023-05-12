@@ -80,8 +80,8 @@ In my case i've used us-ashburn-1 as my region key. Also make sure that the regi
 ```bash
 (dntv4) ubuntu@dockervm:$ fn use context ocir-context
 (dntv4) ubuntu@dockervm:$ fn list context
-CURRENT	NAME		PROVIDER	API URL						                    REGISTRY
-	default		    default     http://localhost:8080				            iad.ocir.io/<namespace>/dnt
+CURRENT	NAME		PROVIDER	API URL					        REGISTRY
+	default		default         http://localhost:8080			        iad.ocir.io/<namespace>/dnt
 *	ocir-context	oracle		https://functions.us-ashburn-1.oraclecloud.com	us-ashburn-1.ocir.io/<namespace>/download_and_transfer
 ```
 
