@@ -11,11 +11,6 @@ The function calls the following OCI Python SDK classes:
 
 [Object Storage Client](https://oracle-cloud-infrastructure-python-sdk.readthedocs.io/en/latest/api/object_storage/client/oci.object_storage.ObjectStorageClient.html) to interact with Object Storage.
 
-
-
-
-
-
 ## Initial Configuration
 
 To follow along make sure you have your tenancy created in OCI and docker installed.
