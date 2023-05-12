@@ -83,6 +83,9 @@ CURRENT	NAME		PROVIDER	API URL					        REGISTRY
 ### Store private key to connect to remote host in oracle vault secret
 
 This can be done via OCI Dashboard
+
+![Create Secret](https://github.com/nitin23c/oci_function_example/assets/11648754/f77a78c2-b87e-4b5a-9988-ce18d42f6613)
+
 ## Deployment
 
 To deploy this project we will create an application 
@@ -100,8 +103,6 @@ fn --verbose deploy --app download_and_transfer
 ### Update configuration
 
 Update the SECRET_OCID configuration of function with the ocid of secret created earlier.
-
-![Create Secret](https://github.com/nitin23c/oci_function_example/assets/11648754/f77a78c2-b87e-4b5a-9988-ce18d42f6613)
 
 To test the build , Enable emit events of a bucket.
 
