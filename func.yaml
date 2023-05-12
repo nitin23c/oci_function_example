@@ -8,7 +8,7 @@ entrypoint: /python/bin/fdk /function/func.py handler
 memory: 256
 config:
   LOCAL_PATH: /tmp
-  REMOTE_HOST: 10.0.1.58
+  REMOTE_HOST: <IP_Address>
   REMOTE_PATH: /tmp
-  REMOTE_USER: ubuntu
+  REMOTE_USER: <Remote_Username>
   SECRET_OCID: NULL
