@@ -48,7 +48,7 @@ Allow dynamic-group function-dynamic-group to manage secret-family in tenancy
 
 create an API key and copy private/public key on to your system.
 
-![API Key for the user](https://github.com/nitin23c/oci_function_example/assets/11648754/0707091e-9bf0-4a7b-80c3-276375ea4351)
+![API Key for the user](https://github.com/nitin23c/oci_function_example/assets/11648754/183b4414-876c-4dff-a7c9-e779ded852df)
 
 create a directory as .oci in your home directory and then put the information received while creating api key into a file called config.
 
