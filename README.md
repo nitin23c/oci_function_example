@@ -130,7 +130,7 @@ You may have to add network security group to allow docker container to access t
 
 You can do this as suggested in below screenshot , This configuration is in application
 
-![Subnet and NSG Config](https://github.com/nitin23c/oci_function_example/assets/11648754/36b96cdb-df7b-4588-9c11-9dceb2eee63c)
+![Subnet and NSG Config](https://github.com/nitin23c/oci_function_example/assets/11648754/d577f8c9-46a4-4f54-9105-05dcaa8ceb84)
 
 ### Update configuration
 
