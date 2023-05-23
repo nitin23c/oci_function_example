@@ -44,6 +44,26 @@ Allow dynamic-group function-dynamic-group to manage buckets in compartment sand
 Allow dynamic-group function-dynamic-group to manage secret-family in tenancy
 ```
 
+### Configure OCI login config
+
+create an API key and copy private/public key on to your system.
+
+![API Key for the user](https://github.com/nitin23c/oci_function_example/assets/11648754/aad303e6-b2d4-4739-aac9-24014072aff5)
+
+create a directory as .oci in your home directory and then put the information received while creating api key into a file called config.
+
+fn command uses this informatio
+
+
+```bash
+[DEFAULT]
+user=ocid1.user.oc1..<redacted>
+fingerprint=15:0e:02:ea:4b:27:c9:b8:7c:<redacted>
+tenancy=ocid1.tenancy.oc1..<redacted>
+region=us-ashburn-1
+compartment-id=ocid1.compartment.oc1..<redacted>
+key_file=/home/username/.oci/<redacted>.pem
+```
 ### Configure Docker login to OCI Registry
 
 ```bash
@@ -94,11 +114,23 @@ To deploy this project we will create an application
 fn create app download_and_transfer --annotation oracle.com/oci/subnetIds='["ocid1.subnet.oc1.iad...."]'
 ```
 
+If you want to add more than one subnets or include vcn you can use following command
+
+```bash
+fn create app download_and_transfer --annotation oracle.com/oci/subnetIds='["ocid1.subnet.oc1.iad.<redacted>","ocid1.subnet.oc1.iad.<redacted>"]' --annotation oracle.com/oci/vcnId='["ocid1.vcn.oc1.iad.<redacted>"]'
+```
+
 Build and push the image to OCI registry
 
 ```bash
 fn --verbose deploy --app download_and_transfer
 ```
+
+You may have to add network security group to allow docker container to access the remote host.
+
+You can do this as suggested in below screenshot , This configuration is in application
+
+![Subnet and NSG Config](https://github.com/nitin23c/oci_function_example/assets/11648754/36b96cdb-df7b-4588-9c11-9dceb2eee63c)
 
 ### Update configuration
 
