@@ -52,7 +52,7 @@ create an API key and copy private/public key on to your system.
 
 create a directory as .oci in your home directory and then put the information received while creating api key into a file called config.
 
-fn command uses this informatio
+fn command uses this information to connect to OCI and upload container image and deploy functions
 
 
 ```bash
