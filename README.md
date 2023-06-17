@@ -1,6 +1,6 @@
 
 # Download and Transfer
-[OCI Function Architecture](https://github.com/nitin23c/oci_function_example/assets/11648754/8b03d977-8b24-4c44-a1d4-bbb91e23e8d0)
+![OCI Function Architecture](https://github.com/nitin23c/oci_function_example/assets/11648754/8b03d977-8b24-4c44-a1d4-bbb91e23e8d0)
 
 Above diagram describes the architecture of oracle function for our use case.
 
